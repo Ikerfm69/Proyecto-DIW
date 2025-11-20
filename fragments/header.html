@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Videoclub Sakila - Header fragment</title>
+</head>
+<body>
+<!-- Fragmento del encabezado -->
+<header th:fragment="header"
+        style="background-color:#00264d; padding:1rem 2rem;
+               display:flex; justify-content:space-between; align-items:center;
+               box-shadow:0 2px 5px rgba(0,0,0,0.3);">
+    <h1>🎥 <a th:href="@{/}" style="margin:0; font-size:1.8rem; color:#f0c330;text-decoration: none">Tienda</a></h1>
+    <nav>
+        <a th:href="@{/}" style="color:#fff; text-decoration:none; margin-left:1.2rem;">Inicio</a>
+        <a th:href="" style="color:#fff; text-decoration:none; margin-left:1.2rem;">Catálogo</a>
+        <!-- Enlace añadido: Estrenos -->
+        <a th:href="" style="color:#fff; text-decoration:none; margin-left:1.2rem;">Contacto</a>
+    </nav>
+</header>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<footer th:fragment="footer"
+        style="text-align:center; background-color:#001a33; padding:1rem;
+               margin-top:auto; font-size:0.9rem; color:#fff;">
+    
+    <p>
+        © 2025 Videoclub Sakila | Desarrollado con Spring Boot y Thymeleaf para DWES
+    </p>
+
+    <!-- 🔗 Enlaces del pie -->
+    <nav style="margin-top:0.5rem;">
+        
+       
+        <h3><a th:href="@{/quienes-somos}" style="color:#f0c330; text-decoration:none; margin:0 0.7rem;">
+           QUIÉNES SOMOS
+        </a></h3>
+        <a href="https://www.instagram.com" target="_blank">
+            <img th:src="@{/Logos/instagram.jpg}" alt="Instagram" style="width: 35px;">
+        </a>
+        <a href="https://www.facebook.com" target="_blank">
+            <img th:src="@{/Logos/facebook.jpg}" alt="Facebook" style="width: 35px;">
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <img th:src="@{/Logos/youtube.jpg}" alt="YouTube" style="width: 40px;">
+        </a>
+        
+    </nav>
+
+</footer>
+
+</body>
+</html>
+
